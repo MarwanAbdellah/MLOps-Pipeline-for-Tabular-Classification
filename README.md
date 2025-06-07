@@ -78,13 +78,13 @@ pip install -r requirements.txt
 ### Build the Docker image
 
 ```
-docker build -t tabular-mlops .
+docker build -t mlops_image .
 ```
 
 ### Run the container
 
 ```
-docker run --rm tabular-mlops
+docker run -di -p 8000:8000 --name mlops_image mlops_container
 ```
 
 ---
